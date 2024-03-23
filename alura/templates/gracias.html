@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="cont maincont">
+  <h1 class="maincont-ttl">Cuenta de {{user.username}}</h1>
+  <article class="page-cont">
+    <div class="page-styling">
+      {% csrf_token %}
+      <div class="auth-wrap">
+        <div class="auth-col">
+          <h2>Gracias por tu Compra</h2>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

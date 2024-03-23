@@ -1,0 +1,95 @@
+{% load static %}
+
+<div class="frame-princ-header-all">
+    <div class="content-header">
+      <div class="comp-st">
+        <button class="btn-header-open-icon">
+          <img
+            class="btn-opne-h"
+            src="{% static 'img/img-home/icon-menu-open.svg' %}"
+            alt=""
+          />
+        </button>
+        <div class="content-open-menu">
+          <div class="dtl-menu-open-cls">
+            <button class="btn-header-close-icon" onClick="{handleClick}">
+              <img
+                class="btn-close-h"
+                src="{% static 'img/img-home/icon-menu-close.svg' %}"
+                alt=""
+              />
+            </button>
+            <div class="content-search-flot-open">
+              <input
+                class="input-search-open"
+                type="search"
+                name=""
+                id=""
+                placeholder="Que le gustaria aprender?"
+              />
+              <img src="{% static 'img/img-home/search-icon.png' %}" alt="" />
+            </div>
+            <div class="cont-ld-rg position-om">
+              <a class="btn-link-a" href="/login">
+                <div class="cont-btn-login">
+                  <p>INGRESAR</p>
+                </div>
+              </a>
+            </div>
+            <div class="cont-ld-iz-mo">
+              <a class="btn-link-a-mo" href="">
+                <div class="cont-btn-t cont-btn-op-t">
+                  <p>COMO FUNCIONA</p>
+                </div>
+              </a>
+              <a class="btn-link-a-mo" href="">
+                <div class="cont-btn-t cont-btn-op-t">
+                  <p>PARA EMPRESAS</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="img-logo" href="/">
+          <img src="{% static 'img/img-home/alura-logo.svg' %}" alt="" />
+        </a>
+        <div class="content-search content-search-mbl">
+          <input
+            class="input-search"
+            type="search"
+            name=""
+            id=""
+            placeholder="Que le gustaria aprender?"
+          />
+          <img src="{% static 'img/img-home/search-icon.png' %}" alt="" />
+        </div>
+      </div>
+      <div class="comp-st-1">
+        <div class="cont-ld-iz">
+          <a class="btn-link-a btn-hdr-mobile" href="">
+            <div class="cont-btn-t">
+              <p>COMO FUNCIONA</p>
+            </div>
+          </a>
+          <a class="btn-link-a btn-hdr-mobile" href="">
+            <div class="cont-btn-t">
+              <p>PARA EMPRESAS</p>
+            </div>
+          </a>
+        </div>
+        <div class="cont-ld-rg">
+          <a class="btn-link-a btn-hdr-mobile" href="/login">
+            <div class="cont-btn-login">
+              <p>INGRESAR</p>
+            </div>
+          </a>
+
+          <a class="btn-link" href="">
+            <div class="cont-matricula">
+              <p>MATRICULARCE</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

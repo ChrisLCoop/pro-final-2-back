@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} 
+
+
+{% block content %}
+
+<div class="cont maincont">
+  <h1 class="maincont-ttl">Cuenta de {{user.username}}</h1>
+  <article class="page-cont">
+    <div class="page-styling">
+      <div class="auth-wrap">
+        <div class="auth-col">
+          <h2>Datos Personales</h2>
+          <form action="/cliente/update" method="POST">
+              {% csrf_token %}
+              {{frm_cliente.as_p}}
+              <p class="auth-submit">
+                <input type="submit" value="Actualizar Datos">
+              </p>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

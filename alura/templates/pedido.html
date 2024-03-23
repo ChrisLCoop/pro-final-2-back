@@ -1,0 +1,44 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="cont maincont">
+  <h1 class="maincont-ttl">Cuenta de {{user.username}}</h1>
+  <article class="page-cont">
+    <div class="page-styling">
+      <form action="/pedido/add" method="POST" class="register">
+        {% csrf_token %}
+        <div class="auth-wrap">
+          <div class="auth-col">
+            <h2>Datos del Cliente</h2>
+            {{frm_cliente.as_p}}
+          </div>
+          <div class="auth-col">
+            <h2>Datos del Pedido</h2>
+            <div class="widget_shopping_cart">
+              <div class="widget_shopping_cart_content">
+                <ul class="cart_list">
+                  {% for key,value in request.session.cart.items %}
+                  <li>
+                    <img src="{{value.imagen}}" alt="" width="150px"/>
+                    <br>
+                    {{value.nombre}}
+                    <br>
+                    S/.{{value.precio}}
+                  </li>
+                  {% endfor %}
+                </ul>
+                <p class="total">
+                  <b>Total:</b>S/.{{request.session.cart_total}}
+                </p>
+                <p class="auth-submit">
+                    <input type="submit" value="Confirmar Pedido">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% load static %}
+<aside class="blog-sb-widgets section-sb" id="section-sb">
+    <div class="theiaStickySidebar">
+      <p class="section-filter-toggle filter_hidden">
+        <a href="#" id="section-filter-toggle-btn">Filtros</a>
+      </p>
+      <div class="section-filter">
+        <div class="section-filter">
+          <div class="blog-sb-widget multishopcategories_widget">
+            <h3 class="widgettitle">Categorias</h3>
+            <div class="section-sb-current">
+              <ul class="section-sb-list">
+                <li>
+                  <a href="/cursos"
+                    ><span class="section-sb-label"
+                      >Todas
+                      <span class="count">{{cursos.count}} </span></span
+                    ></a
+                  >
+                </li>
+                {% for categoria in categorias %}
+                <li>
+                  <a href="/cursos?cat={{categoria.id}}"
+                    ><span class="section-sb-label"
+                      >{{categoria.nombre}}
+                      <span class="count">{{categoria.curso_set.all.count}} </span></span
+                    ></a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="blog-sb-widget multishopbrands_widget">
+            <h3 class="widgettitle">Areas</h3>
+            <ul class="brands-list-sb">
+              {% for area in areas %}
+              <li>
+                <a href="/cursos?are={{area.id}}">{{area.nombre}}<span class="count">{{area.curso_set.all.count}} </span></a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</aside>
