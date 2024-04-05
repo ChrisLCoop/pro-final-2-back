@@ -1,0 +1,704 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+
+.hcursos{
+    background-color: #16355A; /* Color de fondo del encabezado */
+    color: #fff; 
+    padding: 5px; 
+    text-align: center; 
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.ulcursos{
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .licursos{
+    margin: 0 15px; /* Espaciado entre elementos de la lista */
+  }
+  
+  .acursos{
+    text-decoration: none;
+    color: #fff; /* Color del enlace en el encabezado */
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .acursos:hover {
+    border-bottom: 2px solid #fff; /* Línea inferior al pasar el ratón por encima */
+  }
+/* TITULOS */
+
+/* RESUMEN CURSO */
+
+.cursos2{
+    display:flex;
+    justify-content: space-between;
+    background-image: url(/imgcurso/luz-topo.1686744882\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+
+.cursos2-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.cursos2-1-1{
+    color: #fff;
+    max-width: 900px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 200px;
+    margin: auto;
+    
+} 
+.cursos2-1-1 h1{
+    /* color: #4549A1; */
+    font-size: 28px;
+    background-image: linear-gradient(200deg, #fff, #4549A1) ;
+    background-clip: text;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    /* -moz-text-fill-color:transparent; */
+   
+}
+.cursos2-1-1 strong p{
+    font-size: 18px;
+    color: #4549A1 ;
+}
+
+.cursos2-1-2 img {
+    max-width: 350px;
+    max-height: 350px;
+    margin-right: 80px;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+
+/* section 4 */
+
+.hcursos3{
+    background-color: #fff; /* Color de fondo del encabezado */
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ulcursos3{
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    /* margin-bottom: 5px; */
+    gap: 8px;
+  }
+
+  .licursos3{
+    margin: 0 15px; /* Espaciado entre elementos de la lista */
+    margin-bottom: 2px;
+   
+  }
+  
+  .acursos3{
+    text-decoration: none;
+    color: #167bf7; /* Color del enlace en el encabezado */
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+  }
+  
+
+  .acursos3:hover {
+    border-bottom: 2px solid #0a3fd1; 
+  }
+/* cards */
+  .hcursos4{
+    color: #16355A;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+ .cardcursos{
+    
+    max-width: 400px;
+    border: 1px solid #16355A ;
+    box-shadow: 0 8px 12px rgba(9, 105, 223, 0.2); /* Sombra */
+    border-radius: 8px;
+    margin: 20px;
+       
+ }
+
+ .cardcursos a:active{
+    text-decoration: none;
+    color:#d58616;
+   
+ }
+ .cardcursos a:visited{
+    color:#16355A;
+    text-decoration: none;
+ }
+ .cardcursos:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+ }
+
+ a:-webkit-any-link{
+    text-decoration: none;
+ }
+
+ .cardcursos1-1{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #16355A;
+    padding: 10px;
+    
+ }
+
+ .cardcursos1-1 img{
+    width: 40px;
+    height: auto;
+    padding-right: 8px;
+    
+}
+
+.cardcursos1-2{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #16355A;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+ }
+
+ .cardcursos1-2 img{
+    width: 24px;
+    height: auto;
+    padding-right: 8px;
+    margin-left: 8px;
+    
+}
+
+/* card2 */
+.hcursos4-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* card5 */
+
+.hcursos5{
+    color: #16355A;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto ;
+    border: 1px solid #16355A ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 5px;
+    background-image: url(/imgcurso/insignia-que-fluye-aplicacion_74855-3835-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-x:900px ;
+    background-position-y: -110px;
+    position: relative;
+        top: 100px;
+        background-color: #fff;
+}
+
+.hcursos5-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 28px;
+    margin-right: 40px;
+    margin-top: 20px;
+    flex-direction: row;
+    font-size: 20px;
+    
+}
+
+.hcursos5-1 img{
+    width: 40px;
+}
+.hcursos5-1-1{
+    display: flex;
+    gap: 10px;
+}
+.hcursos5-2{
+    max-width: 300px;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+/* xcursos5 */
+
+/* .xcursos5{
+    position: absolute;
+    top: -500;
+    z-index: 10;
+} */
+/* cursos6 */
+
+.cursos6{
+    background-color: #0B1A2D;
+    display: flex;
+    background-image: url(/imgcurso/luz-topo.1686744882\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hcursos6{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+
+}
+.cursos6-1{
+    max-width: 750px;
+    width: 100%;
+    margin: auto;
+   
+}
+.cursos6-2 img{
+    margin-right: 20px;
+    padding-right: 3px; 
+}
+
+.hcursos6-1{
+    width: 100%;
+    max-width: 650px;
+}
+
+/* cursos7 */
+
+.cursos7{
+    color: #16355A;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    align-content:space-evenly;
+    background-image: url(/imgcurso/bg-lideres.1686744882.svg);
+    
+}
+.cursos7 img{
+    border-radius: 100%;
+    width: 150px;
+    margin-bottom: 20px;
+  
+}
+.cursos7-1{
+    font-size: 30px;
+    
+}
+.cursos7-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hcursos7{
+    margin: 20px auto;
+}
+.hcursos7-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* cursos8 */
+.cursos8{
+    display: flex;
+    background-color: #fff;
+    height: 100%;
+   padding: 20px;
+   justify-content: center;
+   color: #093366;
+}
+.hcursos8{
+    margin: 10px;
+    height: 100%;
+}
+.cursos8-2{
+    display: flex;
+    max-height: 2000px;
+    height: 100%;
+    margin-top: 50px;
+
+}
+.cursos8-2-1{
+padding: 10px;
+ height: 100%;
+ border: 1px solid #0B1A2D;
+ margin: auto;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ border-top: 10px solid #167bf7;
+ border-radius: 5px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+ padding-left: 50px;
+ padding-right: 50px;
+ background:  url(/imgcurso/libro1.svg);
+ background-repeat: no-repeat;
+ background-size: 100px;
+ 
+}
+.cursos8-2-2{
+    /* max-height: 724px; */
+    height: 100%;
+    border: 1px solid #0B1A2D;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: -30px;
+    border-top: 10px solid #167bf7;
+    background:  url(/imgcurso/libro2.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    
+}
+
+.hcursos8-1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.cursos8-1{
+    padding-top: 35px;
+padding-bottom: 35px;
+font-size: 20px;
+}
+.plus{
+    color: #167bf7  ;
+    position: relative;
+    top: -10px;
+}
+.anual{
+    font-size: 12px;
+    position: relative;
+    top: -10px
+}
+.precio8{
+    margin-top: 15px;
+}
+.precio8 strong{
+    font-weight:bolder;
+}
+.hcursos8-1 strong{
+    font-size: 32px;
+}
+
+.btncursos8{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 30px;
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 35px;
+    transition: 0.3s ease-in-out ;
+    background-color: #a3ffbf;
+    border-color: rgba(0, 0, 0, 0.3);
+    animation:signal  1s infinite;
+}
+
+@keyframes signal{
+    0%{
+        box-shadow: 0 0 0 0 #4ade00;
+    }
+    100%{
+        box-shadow: 0 0 0 7px rgba(0,0,0,0);
+    }
+}
+
+.btncursos8:hover{
+    scale: 1.1;
+}
+
+.btncursos8 p{
+ font-size: 17px;
+ padding: 15px;
+ 
+}
+
+
+.boton8{
+    display: flex;
+    justify-content: center;
+}
+
+.listacursos8{
+    max-width: 240px;
+}
+
+.pfinal{
+    margin-top: 20px;
+    text-align: center;
+}
+/* cursos9 */
+.cursos9{
+    background-color: #16355A;
+    padding: 30px auto;
+    
+}
+.hcursos9{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px auto;
+    
+    
+}
+.cursos9-1{
+   
+    padding: 30px auto;
+    flex-direction: column;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+   
+
+}
+.cursos9-1 img{
+    width: 40;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+  @media screen and (max-width: 800px){
+    .ulcursos{ width:  100%;
+    padding: 1rem 0;
+    list-style: none;
+    display: grid;
+    grid-auto-rows: 40px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+        "programacao front-end"
+        "data-science inteligencia-artificial"
+        "devops design-ux"
+        "mobile inovacao-gestao";}
+    .cursos2-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+     .cursos2-1-2 img {
+            opacity: 1;
+            margin: auto;
+            padding: auto;
+
+        }
+    .cursos2-1-1{
+        padding: 50px;
+        text-align: center;
+        align-items: center;
+    }
+
+   .hcursos4-1 {
+    display: flex;
+    justify-content: center;
+   }
+
+    /* card5 */
+    .hcursos5{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 20px;
+        text-align: center;
+        align-items: center;
+        background-position: center;
+        background-position: -130px -80px;
+        /* width: 100%; */
+        position: relative;
+        top: 100px;
+        background-color: #fff;
+        
+    }
+
+    .hcursos5-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hcursos5-1-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hcursos5-2{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    .hcursos5 p{
+        width: 100%;
+        color: #16355A;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    /* cursos6 */
+.hcursos6{
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+    /* cursos7 */
+    .cursos7{
+        color: #16355A;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        align-content:space-evenly;
+    }
+    .hcursos7-1{
+        gap: 12px;
+    }
+
+    /* cursos8 */
+    .cursos8-2{
+        display: flex;
+        max-height: 2000px;
+        height: 100%;
+        margin-top: 50px;
+        flex-direction: column;
+    
+    }
+    .cursos8-2-2{
+        top: 30px;
+    }
+    .pfinal{
+        margin-top: 50px;
+    }
+   /* /* cursos9  */
+
+   .cursos9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    .hcursos9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+  }
+
+  @media screen and (max-width: 1100px){ 
+    .hcursos4-1{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .hcursos6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    
+    }
+    .hcursos6 .h2{
+        text-align: center;
+    }
+    
+
+    /* cursos7 */
+    .cursos7{
+        color: #16355A;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        align-content:space-evenly;
+        margin-top: 20px;
+    }
+
+    .hcursos7-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    }   
+
+/*======= Scroll indicator bar =======*/
+.scroll-indicator-container{
+    width: 100%;
+    height: 5px;
+    position: fixed;
+}
+
+.scroll-indicator-bar{
+    background: #199fff;
+    width: 0%;
+    height: 100%;
+    box-shadow: 0 5px 25px #199fff,
+                0 5px 50px #199fff;
+}
+
+.nav-close-btn, .nav-menu-btn{
+    display: none;
+}
